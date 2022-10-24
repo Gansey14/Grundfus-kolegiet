@@ -1,1 +1,1 @@
-# Grundfus-kolegiet
+# Grundfos-kolegiet
