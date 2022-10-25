@@ -12,6 +12,9 @@
     --light-grey-blue: #96c3c8;
     --greeny-blue: #40acb9;
     --white: #F6F6F6;
+    --charcoal-grey: #37474f;
+    --light-lime-green: #c8fd6b;
+    --ugly-blue: #267983;
 }
   
 
@@ -38,7 +41,7 @@ nav {
     align-items: center;
 }
 
-#logo > img {
+img {
     width: 100%;
 }
 
@@ -83,10 +86,33 @@ nav {
 #language-wrapper > a {
     text-decoration: none;
     color: var(--light-grey-blue);
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
 }
 
 #language-wrapper > a.active-language {
     color: var(--greeny-blue);
+}
+
+main {
+    padding: 25px 50px;
+}
+
+h1 {
+    color: var(--coral);
+    font-size: 5.7rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: var(--charcoal-grey);
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }

@@ -1,0 +1,58 @@
+.header-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-part > p {
+    width: 40%;
+}
+
+.square-contents {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 23px;
+}
+
+.schedule-part {
+    background-color: #C9D5E1;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.schedule-part > h2 {
+    color: var(--ugly-blue);
+}
+
+.upper-part-left {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 23px;
+}
+
+.washer-part {
+    width: 50%;
+    background-color: var(--light-lime-green);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.events-part {
+    width: 50%;
+    background-color: var(--light-lime-green);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: var(--coral);
+}
+
+.maps-part {
+    width: 38%;
+}
