@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 23px;
 }
 
 .left-part {
@@ -25,6 +26,7 @@
     background-color: #C9D5E1;
     padding: 20px;
     border-radius: 30px;
+    height: 50%;
 }
 
 .schedule-part > h2 {
@@ -54,5 +56,74 @@
 }
 
 .maps-part {
-    width: 38%;
+    width: 40%;
+    background-color: var(--pastel-blue);
+    border-radius: 30px;
+    padding: 20px;
+    max-height: 100%;
+}
+
+.maps-part > h2 {
+    margin-top: -125px;
+}
+
+.week-text {
+    color: var(--greeny-blue);
+    font-size: 1.3rem;
+}
+
+.floor-details {
+    background-color: var(--greeny-blue);
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 15px;
+    gap: 10px;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.floor-details > img {
+    cursor: pointer;
+}
+
+.floor-details > p {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.room-details {
+    background-color: var(--white);
+    color: var(--greeny-blue);
+    border-radius: 5px;
+    padding: 12px 60px;
+}
+
+.details {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+.buttons {
+    display: flex;
+    gap: 34px;
+    margin-top: 64px;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    background-color: var(--dusk-blue);
+    border-radius: 33px;
+    border: 0;
+    width: 50%;
+    padding: 10px 53px;
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.buttons > button:hover {
+    background-color:  var(--white);
+    color: var(--dusk-blue);
 }
