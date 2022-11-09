@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: open-sans;
+}
+
+:root {
+  --white: #f6f6f6;
+  --red: #e66565;
+  --light-grey-blue: #96c3c8;
+  --greeny-blue: #40acb9;
+  --light-blue: #deeef0;
+  --grey: #37474f;
+  --green: #c8fd6b;
+  --ugly-blue: #267983;
+  --dark-blue: #9cc0f9;
+  --dusk-blue: #24607e;
+}
