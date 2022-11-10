@@ -1,0 +1,57 @@
+.qrapp,
+.qrguide {
+  /* height: 17rem; */
+  max-width: 14.2vw;
+  max-height: 14.2vw;
+  aspect-ratio: 1/1;
+}
+
+.hand {
+  width: 60%;
+  height: 35rem;
+  /* padding-top: 1rem; */
+}
+
+.apps {
+  display: flex;
+  gap: 2rem;
+}
+
+.apptext {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.web-guide {
+  display: flex;
+  gap: 2rem;
+}
+.guidetext {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-all {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  /* padding-bottom: 3rem; */
+  width: 100%;
+  /* margin: 5rem auto 5rem auto; */
+}
+
+.section-guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
