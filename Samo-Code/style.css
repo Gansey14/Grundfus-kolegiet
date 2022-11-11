@@ -9,13 +9,16 @@ body {
   padding: 0;
   /* overflow: hidden; */
 }
+
 body {
   display: flex;
 }
+
 * {
   padding: 0;
   margin: 0;
 }
+
 :root {
   --white: #f6f6f6;
   --red: #e66565;
@@ -37,6 +40,7 @@ h1 {
   padding: 0;
   flex-shrink: 0;
 }
+
 h2 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -62,6 +66,7 @@ p {
   height: 100%;
   background-color: var(--white);
 }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -95,7 +100,7 @@ img {
   gap: 3.6rem;
 }
 
-#nav-links > a > img {
+#nav-links>a>img {
   width: 3.2rem;
   height: 3.2rem;
 }
@@ -127,16 +132,17 @@ img {
   align-items: center;
 }
 
-#language-wrapper > a {
+#language-wrapper>a {
   text-decoration: none;
   color: var(--light-grey-blue);
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
 }
 
-#language-wrapper > a.active-language {
+#language-wrapper>a.active-language {
   color: var(--greeny-blue);
 }
+
 /* NAV END */
 
 /* HEADER */
@@ -148,6 +154,7 @@ header {
   /* height: 50rem; */
   width: 100%;
 }
+
 .header-container {
   display: flex;
   width: 85%;
@@ -159,6 +166,8 @@ header {
   /* margin-bottom: 1rem;
   margin-top: 1rem; */
 }
+
+
 
 .p-container {
   display: flex;
@@ -175,6 +184,7 @@ header {
   /* margin-left: 1rem;
   margin-right: 1rem; */
 }
+
 .infoicon {
   height: 3rem;
   width: 3rem;
