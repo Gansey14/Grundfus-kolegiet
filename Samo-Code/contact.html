@@ -11,6 +11,17 @@
   <link rel="stylesheet" href="stylecontact.css" />
   <!-- <link rel="stylesheet" href="common.css" /> -->
   <!-- <link rel="stylesheet" href="index.css" /> -->
+
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+
+  <style>
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -73,8 +84,11 @@
           <ul>Our system number is: C0268E</ul>
         </div>
       </div>
-      <div class="address"></div>
+      <div class="address">
+        <div id="map"></div>
+      </div>
     </div>
+
     <script src="js.js"></script>
 </body>
 

@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["accfont", "infoicon", "qrapp", "qrguide", "slidecontainer"]
+  "cSpell.words": [
+    "accfont",
+    "infoicon",
+    "qrapp",
+    "qrguide",
+    "slidecontainer"
+  ],
+  "liveServer.settings.port": 5501
 }
