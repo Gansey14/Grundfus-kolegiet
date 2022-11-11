@@ -9,21 +9,12 @@
   gap: 2rem;
 }
 
-/* .brightness,
-.volume,
-.accfont {
-  height:24vh;
-} */
-
 .acc-all {
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
   gap: 6rem;
-
-  /* padding-bottom: 3rem; */
   width: 100%;
-  /* margin: 5rem auto 5rem auto; */
 }
 .section-acc {
   display: flex;

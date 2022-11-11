@@ -7,7 +7,6 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
 }
 body {
   display: flex;
@@ -67,7 +66,6 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* gap: 9rem; */
   height: 90%;
   background-color: var(--white);
   width: 100%;
@@ -113,7 +111,6 @@ img {
   height: 12px;
   border-radius: 50px;
   width: 40%;
-  /* border: 13px solid var(--red); */
   background-color: var(--red);
   left: 50%;
   transform: translate(-50%, 0);
@@ -153,27 +150,19 @@ header {
   width: 85%;
   align-items: center;
   gap: 3rem;
-  /* padding: 3rem 0; */
-  /* padding: 1vw 5rem 1vw 3rem; */
-  /* height: fit-content; */
-  /* margin-bottom: 1rem;
-  margin-top: 1rem; */
 }
 
 .p-container {
   display: flex;
-  /* width: 50rem; */
   margin-right: auto;
   padding: 0;
+  width: 100%;
 }
 
 .divider {
   border-left: 0.08vw solid var(--red);
   height: 3vw;
-  /* position: relative; */
   left: 50%;
-  /* margin-left: 1rem;
-  margin-right: 1rem; */
 }
 .infoicon {
   height: 3rem;
