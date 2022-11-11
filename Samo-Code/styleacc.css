@@ -1,0 +1,144 @@
+.h2acc {
+  padding: 0;
+  margin: 0;
+}
+
+.info-all {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+/* .brightness,
+.volume,
+.accfont {
+  height:24vh;
+} */
+
+.acc-all {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  gap: 6rem;
+
+  /* padding-bottom: 3rem; */
+  width: 100%;
+  /* margin: 5rem auto 5rem auto; */
+}
+.section-acc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* SLIDER */
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 0.5vw; /* Specified height */
+  background: var(--red); /* Grey background */
+  border-radius: 33px;
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+  background: var(--red); /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 2vw; /* Set a specific slider handle width */
+  height: 2vw; /* Slider handle height */
+  border-radius: 33px;
+  background: var(--greeny-blue); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 2vw; /* Set a specific slider handle width */
+  height: 2vw; /* Slider handle height */
+  background: var(--greeny-blue); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slidecontainer > p {
+  margin: 0;
+  padding: 1vw 0;
+}
+
+/* @media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .acc-all {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .slidecontainer {
+    width: 70vw;
+    height: 4vh;
+    overflow: hidden;
+  }
+
+  .brightness,
+  .volume,
+  .accfont {
+    height: 100%;
+  }
+
+  /* .header-container.h1 {
+    order: 1;
+  }
+
+  .header-container.p {
+    order: 2;
+  }
+
+  .header-container.infoicon {
+    order: 3;
+  } */
+/* .infoicon {
+    position: absolute;
+    top: 6vw;
+    right: 40vw;
+    z-index: 1;
+  }
+  .divider {
+    display: none;
+  }
+} */
+
+/* @media (min-width: 1100px) {
+  .hand {
+    height: 30%;
+  }
+  .h1 {
+    flex-shrink: 2;
+  }
+} */
