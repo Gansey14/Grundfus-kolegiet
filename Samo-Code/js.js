@@ -1,12 +1,17 @@
 const homebutton = document.getElementById("homebutton");
 const contactbutton = document.getElementById("contactbutton");
+const tapicon = document.getElementById("tapicon");
+const addresscontainer = document.querySelector(".address");
 
 homebutton.classList.remove("nav-link-active");
 contactbutton.classList.add("nav-link-active");
 
+addresscontainer.addEventListener("click", function () {
+    tapicon.style.display = "none";
+})
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2Fuc2V5MTQiLCJhIjoiY2w5Z3FhbDg2MDd6NTN1bzAzdThpd2I2biJ9.KrSKpe-UlwN1yhq5z2271w';
-const monument = [20.018855, 48.385685];
+const monument = [10.224295, 56.164352];
 const map = new mapboxgl.Map({
     container: 'map',
     // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
@@ -17,7 +22,7 @@ const map = new mapboxgl.Map({
 
 // create the popup
 const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Evgenius is the best!!!'
+    'Søren Frichs Vej 50, 8230 Aarhus'
 );
 
 // create DOM element for the marker
@@ -29,3 +34,4 @@ new mapboxgl.Marker(el)
     .setLngLat(monument)
     .setPopup(popup) // sets a popup on this marker
     .addTo(map);
+
