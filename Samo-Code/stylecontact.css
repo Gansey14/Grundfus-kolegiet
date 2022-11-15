@@ -77,10 +77,130 @@ li {
 #tapicon {
   position: absolute;
   right: 10%;
-  bottom: 60%;
+  bottom: 7rem;
   fill: white;
   transform: rotate(-30deg)
 }
+
+.icons {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icons span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.indoormap {
+  width: 600px;
+  height: 100%;
+}
+
+.map {
+  height: 100%;
+}
+
+.iconswrapper {
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.iconwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  width: 7.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 3px 12px #00000050;
+}
+
+
+
+.i1,
+.pinsvg1 {
+  background-color: var(--green);
+  fill: var(--green);
+}
+
+.i2,
+.pinsvg2 {
+  background-color: var(--red);
+  fill: var(--red);
+}
+
+.i3,
+.pinsvg3 {
+  background-color: var(--dark-blue);
+  fill: var(--dark-blue);
+}
+
+.i4,
+.pinsvg4 {
+  background-color: var(--dusk-blue);
+  fill: var(--dusk-blue);
+}
+
+.buttonpressed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  width: 7.5rem;
+  border-radius: 20px;
+  box-shadow: inset 0px 3px 6px #00000050;
+}
+
+.firstpin {
+  position: absolute;
+  right: 12%;
+  bottom: 60%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+.secondpin {
+  position: absolute;
+  right: 8%;
+  bottom: 40%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+.thirdpin {
+  position: absolute;
+  right: 14%;
+  bottom: 8%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+.fourthpin {
+  position: absolute;
+  right: 27%;
+  bottom: 16%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+
+
+.pinhidden {
+  display: none;
+}
+
 
 @media screen and (max-width: 1200px) {
   .address {
@@ -91,6 +211,13 @@ li {
     width: 50%
   }
 
+  #tapicon {
+    position: absolute;
+    right: 10%;
+    bottom: 10rem;
+  }
 
-
+  .iconswrapper span {
+    display: none;
+  }
 }
