@@ -96,7 +96,7 @@ li {
 }
 
 .indoormap {
-  width: 50%;
+  width: 600px;
   height: 100%;
 }
 
@@ -125,20 +125,28 @@ li {
 
 
 
-.i1 {
+.i1,
+.pinsvg1 {
   background-color: var(--green);
+  fill: var(--green);
 }
 
-.i2 {
+.i2,
+.pinsvg2 {
   background-color: var(--red);
+  fill: var(--red);
 }
 
-.i3 {
+.i3,
+.pinsvg3 {
   background-color: var(--dark-blue);
+  fill: var(--dark-blue);
 }
 
-.i4 {
+.i4,
+.pinsvg4 {
   background-color: var(--dusk-blue);
+  fill: var(--dusk-blue);
 }
 
 .buttonpressed {
@@ -152,9 +160,6 @@ li {
 }
 
 .firstpin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   right: 12%;
   bottom: 60%;
@@ -163,13 +168,39 @@ li {
   stroke-width: 4px;
 }
 
+.secondpin {
+  position: absolute;
+  right: 8%;
+  bottom: 40%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+.thirdpin {
+  position: absolute;
+  right: 14%;
+  bottom: 8%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+.fourthpin {
+  position: absolute;
+  right: 27%;
+  bottom: 16%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+
+
 .pinhidden {
   display: none;
 }
 
-.pinsvg1 {
-  fill: var(--green);
-}
 
 @media screen and (max-width: 1200px) {
   .address {
@@ -184,5 +215,9 @@ li {
     position: absolute;
     right: 10%;
     bottom: 10rem;
+  }
+
+  .iconswrapper span {
+    display: none;
   }
 }
