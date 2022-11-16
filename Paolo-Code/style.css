@@ -47,7 +47,6 @@ p {
   font-size: 1.25vw;
   font-weight: 300;
   color: var(--grey);
-  max-width: 70%;
   margin: 0;
 }
 
@@ -159,11 +158,16 @@ header {
   padding: 0;
 }
 
+.header-p {
+  max-width: 90%;
+}
+
 .divider {
   border-left: 0.08vw solid var(--red);
   height: 3vw;
   left: 50%;
 }
+
 .infoicon {
   height: 3rem;
   width: 3rem;
