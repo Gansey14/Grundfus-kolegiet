@@ -48,9 +48,13 @@ header .icons span:hover {
 header .icons span:last-child {
   margin-right: 4rem;
 }
+header .icons {
+  user-select: none;
+}
 
 .calender {
   padding: 20px;
+  user-select: none;
 }
 .calender ul {
   display: flex;
@@ -58,6 +62,7 @@ header .icons span:last-child {
   flex-wrap: wrap;
   text-align: center;
 }
+
 .calender .days {
   margin-bottom: 20px;
 }
@@ -99,4 +104,50 @@ header .icons span:last-child {
 
 .days li.active::before {
   background: var(--red);
+}
+
+.legend-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.legend p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circle-taken,
+.circle-today,
+.circle-selected {
+  height: 38px;
+  width: 38px;
+  margin: 0 3px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+}
+
+.circle-today {
+  background: var(--red);
+}
+.circle-taken {
+  background: #fff;
+}
+.circle-selected {
+  background: var(--grey);
+}
+
+.legend p:last-child {
+  margin-right: auto;
 }
