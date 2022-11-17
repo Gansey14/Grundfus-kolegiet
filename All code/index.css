@@ -16,6 +16,7 @@
   flex-direction: column;
   gap: 1rem;
 }
+
 .square-contents {
   display: flex;
   justify-content: space-between;
@@ -32,14 +33,19 @@
 }
 
 .schedule-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #c9d5e1;
-  padding: 20px;
+  padding: 20px 35px;
   border-radius: 30px;
   height: 50%;
 }
 
-.schedule-part > h2 {
+.schedule-part>h2 {
   color: var(--ugly-blue);
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .upper-part-left {
@@ -53,14 +59,14 @@
   width: 50%;
   background-color: var(--green);
   border-radius: 30px;
-  padding: 20px;
+  padding: 20px 35px;
 }
 
 .events-part {
   width: 50%;
   background-color: var(--green);
   border-radius: 30px;
-  padding: 20px;
+  padding: 20px 35px;
   background-color: var(--red);
 }
 
@@ -68,13 +74,41 @@
   width: 40%;
   background-color: var(--dark-blue);
   border-radius: 30px;
-  padding: 20px;
+  padding: 20px 30px;
   max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.maps-part > h2 {
-  margin-top: -125px;
+.mapman {
+  position: relative;
+  bottom: 1.6rem;
+  width: 85%;
+  z-index: 1;
+
 }
+
+.events-part h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white)
+}
+
+.washer-part h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.maps-part h2 {
+  z-index: 6;
+  margin-right: auto;
+  margin-top: -125px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 
 .week-text {
   color: var(--greeny-blue);
@@ -85,17 +119,17 @@
   background-color: var(--greeny-blue);
   border-radius: 5px;
   display: flex;
-  padding: 10px 15px;
+  padding: 10px 35px;
   gap: 10px;
   margin-right: 30px;
   align-items: center;
 }
 
-.floor-details > img {
+.floor-details>img {
   cursor: pointer;
 }
 
-.floor-details > p {
+.floor-details>p {
   color: var(--white);
   font-size: 1.2rem;
 }
@@ -114,26 +148,41 @@
 }
 
 .buttons {
+  width: 100%;
   display: flex;
-  gap: 34px;
+  gap: 8%;
   margin-top: 64px;
   justify-content: space-between;
-  padding: 0 3rem;
+
 }
 
-.buttons button {
+.buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background-color: var(--dusk-blue);
   border-radius: 33px;
   border: 0;
-  /* width: 50%; */
-  padding: 10px 53px;
+  width: 46%;
+  height: 3rem;
   color: var(--white);
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
   font-weight: 700;
 }
 
-.buttons > button:hover {
+.buttons a:hover {
   background-color: var(--white);
   color: var(--dusk-blue);
+}
+
+@media (max-width: 1100px) {
+  .buttons {
+    position: relative;
+    top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 }

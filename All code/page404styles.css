@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+:root {
+    --white: #f6f6f6;
+    --red: #e66565;
+    --light-grey-blue: #96c3c8;
+    --greeny-blue: #40acb9;
+    --light-blue: #deeef0;
+    --grey: #37474f;
+    --green: #c8fd6b;
+    --ugly-blue: #267983;
+    --dark-blue: #9cc0f9;
+    --dusk-blue: #24607e;
+}
+
 html,
 body {
     width: 100%;
@@ -19,7 +32,7 @@ body {
 h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 10rem;
-    color: #E66565;
+    color: var(--red);
     text-align: center;
     margin: 0;
 }
@@ -76,6 +89,11 @@ h3 {
     height: 3rem;
     width: 3rem;
     aspect-ratio: 1/1;
+}
+
+.flexbox-container a {
+    color: var(--grey);
+    text-decoration: none;
 }
 
 @media (max-width: 900px) {
