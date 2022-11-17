@@ -1,9 +1,3 @@
-const homebutton = document.getElementById("homebutton");
-const contactbutton = document.getElementById("contactbutton");
-
-homebutton.classList.remove("nav-link-active");
-contactbutton.classList.remove("nav-link-active");
-
 //SLIDER
 let sliderb = document.getElementById("myRangeb");
 let outputb = document.getElementById("demo1");
