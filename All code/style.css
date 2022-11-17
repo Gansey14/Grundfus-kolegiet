@@ -26,6 +26,7 @@ body {
   --ugly-blue: #267983;
   --dark-blue: #9cc0f9;
   --dusk-blue: #24607e;
+  --faq-bg: #f8f8f8;
 }
 
 h1 {
@@ -169,6 +170,11 @@ header {
 }
 
 .infoicon {
+  height: 3rem;
+  width: 3rem;
+  aspect-ratio: 1/1;
+}
+.facebook-link {
   height: 3rem;
   width: 3rem;
   aspect-ratio: 1/1;

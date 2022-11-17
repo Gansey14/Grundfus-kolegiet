@@ -43,10 +43,14 @@
   justify-content: space-between;
   width: 100%;
   padding: 20px;
+
+  background-color: var(--faq-bg);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .faq-button {
-  width: 44px;
+  width: 30px;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -69,11 +73,13 @@ button {
 
 .question-hidden > p {
   height: fit-content;
+  width: 80%;
 }
 
 .question-hidden {
   transform: scaleY(0);
   display: block;
+  align-items: center;
   line-height: 0;
   height: 0;
   overflow: hidden;
@@ -86,7 +92,7 @@ button {
   line-height: inherit;
   display: flex;
   padding: 20px;
-  background-color: var(--pale-blue);
+  background-color: var(--light-blue);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
