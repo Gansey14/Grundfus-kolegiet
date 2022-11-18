@@ -7,6 +7,9 @@
 .header-part > p {
     width: 40%;
 } */
+a {
+  text-decoration: none;
+}
 
 .section-guide {
   display: flex;
