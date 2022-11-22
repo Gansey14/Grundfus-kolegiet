@@ -1,0 +1,223 @@
+:root {
+  --white: #f6f6f6;
+  --red: #e66565;
+  --light-grey-blue: #96c3c8;
+  --greeny-blue: #40acb9;
+  --light-blue: #deeef0;
+  --grey: #37474f;
+  --green: #c8fd6b;
+  --ugly-blue: #267983;
+  --dark-blue: #9cc0f9;
+  --dusk-blue: #24607e;
+}
+
+#marker {
+  background-image: url('https://imgs.search.brave.com/nnSN9ZqUMv8VyGelVLySLpi2_nCgJO0iQJdnEbeH0dI/rs:fit:607:614:1/g:ce/aHR0cHM6Ly93d3cu/YnlnZ2VwbGFkcy5k/ay9zaXRlcy9kZWZh/dWx0L2ZpbGVzL3N0/eWxlcy90aGVfYmln/X3BpY3R1cmUvcHVi/bGljL2J5Z2dlcmkv/MjAxMi9ncnVuZGZv/cy1rb2xsZWdpZXQv/Z3J1bmRmb3Mta29s/bGVnaWV0LWZyb250/LmpwZz9pdG9rPTNl/OS1UVnIz');
+  background-size: cover;
+  width: 65px;
+  height: 65px;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.section-guide {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: 32rem;
+  margin: 0 auto;
+}
+
+.contacts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.contacts h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--grey)
+}
+
+.contact2 h4 {
+  font-weight: 400;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+.contact2 h3 {
+  margin-bottom: 0;
+}
+
+.contactperson {
+  font-weight: 550;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.address {
+  width: 65%;
+  display: flex;
+}
+
+#tapicon {
+  position: absolute;
+  right: 10%;
+  bottom: 7rem;
+  fill: white;
+  transform: rotate(-30deg)
+}
+
+.icons {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icons span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.indoormap {
+  width: 600px;
+  height: 100%;
+}
+
+.map {
+  height: 100%;
+}
+
+.iconswrapper {
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.iconwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  width: 7.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 3px 12px #00000050;
+}
+
+
+
+.i1,
+.pinsvg1 {
+  background-color: var(--green);
+  fill: var(--green);
+}
+
+.i2,
+.pinsvg2 {
+  background-color: var(--red);
+  fill: var(--red);
+}
+
+.i3,
+.pinsvg3 {
+  background-color: var(--dark-blue);
+  fill: var(--dark-blue);
+}
+
+.i4,
+.pinsvg4 {
+  background-color: var(--dusk-blue);
+  fill: var(--dusk-blue);
+}
+
+.buttonpressed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  width: 7.5rem;
+  border-radius: 20px;
+  box-shadow: inset 0px 3px 6px #00000050;
+}
+
+.firstpin {
+  position: absolute;
+  right: 12%;
+  bottom: 60%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+.secondpin {
+  position: absolute;
+  right: 8%;
+  bottom: 40%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+.thirdpin {
+  position: absolute;
+  right: 14%;
+  bottom: 8%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+.fourthpin {
+  position: absolute;
+  right: 27%;
+  bottom: 16%;
+  transform: scale(0.4);
+  stroke: var(--grey);
+  stroke-width: 4px;
+}
+
+
+
+.pinhidden {
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .address {
+    width: 50%
+  }
+
+  .contacts {
+    width: 50%
+  }
+
+  #tapicon {
+    position: absolute;
+    right: 10%;
+    bottom: 10rem;
+  }
+
+  .iconswrapper span {
+    display: none;
+  }
+}
