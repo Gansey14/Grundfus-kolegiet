@@ -3,9 +3,6 @@ const contactbutton = document.getElementById("contactbutton");
 const tapicon = document.getElementById("tapicon");
 const addresscontainer = document.querySelector(".address");
 
-homebutton.classList.remove("nav-link-active");
-contactbutton.classList.add("nav-link-active");
-
 addresscontainer.addEventListener("click", function () {
     tapicon.style.display = "none";
 })
